@@ -1,6 +1,14 @@
 import torch
-from kornia import SamplePadding
 from kornia.augmentation import RandomAffine, CenterCrop
+
+import kornia
+from packaging import version
+
+# Check the version of kornia
+if version.parse(kornia.__version__) <= version.parse("0.5.0"):
+    from kornia import SamplePadding  # For kornia versions <= 0.5.0
+else:
+    from kornia.constants import SamplePadding  # For kornia versions > 0.5.0
 
 
 class FakeFakesGenerator:
