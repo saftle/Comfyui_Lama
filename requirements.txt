@@ -1,7 +1,7 @@
 pyyaml
 tqdm
 numpy
-easydict==1.9.0
+easydict
 scikit-image
 scikit-learn
 opencv-python
@@ -9,11 +9,11 @@ tensorflow
 joblib
 matplotlib
 pandas
-albumentations==0.5.2
-hydra-core==1.1.0
-pytorch-lightning==1.2.9
+albumentations
+hydra-core>=1.1.0
+pytorch-lightning
 tabulate
-kornia==0.5.0
+kornia
 webdataset
 packaging
 wldhx.yadisk-direct
